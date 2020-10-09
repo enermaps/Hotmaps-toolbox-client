@@ -235,7 +235,7 @@ export class MapService extends APIService implements OnInit, OnDestroy {
     bbox = bbox + '&CQL_FILTER=' + 'stat_levl_=' + current_nuts_level + ' AND ' + 'date=' + '2015' + '-01-01Z';
     const action = 'population';
     const url = geoserverGetFeatureInfoUrl
-      + action + '&STYLES&LAYERS=hotmaps:' + action + '&INFO_FORMAT=application/json&FEATURE_COUNT=50' +
+      + action + '&STYLES&LAYERS=enermaps:' + action + '&INFO_FORMAT=application/json&FEATURE_COUNT=50' +
       '&X=50&Y=50&SRS=EPSG:4326&WIDTH=101&HEIGHT=101&BBOX=' + bbox;
     this.logger.log('url ' + url);
     return this.getAreaFromScale(url);
@@ -245,7 +245,7 @@ export class MapService extends APIService implements OnInit, OnDestroy {
     const bbox = latlng.toBounds(clickAccuracy).toBBoxString();
     const action = lau2name;
     const url = geoserverGetFeatureInfoUrl
-      + action + '&STYLES&LAYERS=hotmaps:' + action + '&INFO_FORMAT=application/json&FEATURE_COUNT=50' +
+      + action + '&STYLES&LAYERS=enermaps:' + action + '&INFO_FORMAT=application/json&FEATURE_COUNT=50' +
       '&X=50&Y=50&SRS=EPSG:4326&WIDTH=101&HEIGHT=101&BBOX=' + bbox;
     this.logger.log('lau2name url' + url);
     return this.getAreaFromScale(url);

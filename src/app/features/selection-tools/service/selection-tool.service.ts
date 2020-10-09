@@ -267,7 +267,7 @@ export class SelectionToolService extends APIService {
       '&version=2.0.0' +
       '&request=GetFeature' +
       '&srsName=EPSG:' + epsg +
-      '&typeNames=hotmaps:' + stringLayerType +
+      '&typeNames=enermaps:' + stringLayerType +
       '&outputFormat=application/json' +
       '&CQL_FILTER= (WITHIN(geom,polygon((' + coordinate.toString() + '))))'
       ;
