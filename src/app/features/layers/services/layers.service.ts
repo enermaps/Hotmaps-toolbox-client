@@ -39,7 +39,7 @@ export class LayersService extends APIService {
   private zoom_layerGroup: L.LayerGroup;
   private current_nuts_level = '0';
   private heatmapOption = {
-    layers: 'hotmaps:' + defaultLayer,
+    layers: 'enermaps:' + defaultLayer,
     format: formatImage, transparent: true, version: '1.3.0',
     zIndex: layers_order
   };
@@ -119,7 +119,7 @@ export class LayersService extends APIService {
     this.logger.log('action:' + action);
     let layer;
       const option = {
-        layers: 'hotmaps:' + action ,
+        layers: 'enermaps:' + action ,
         format: formatImage,
         transparent: true,
         version: '1.3.0',
@@ -267,7 +267,7 @@ export class LayersService extends APIService {
     const url = geoserverUrl + '?service=wfs' +
       '&version=2.0.0' +
       '&request=GetFeature' +
-      '&typeNames=hotmaps:' + wwtpLayerName +
+      '&typeNames=enermaps:' + wwtpLayerName +
       '&srsName=EPSG:' + epsg +
       '&bbox=' + coordinate.toString() +
       '&outputFormat=application/json';

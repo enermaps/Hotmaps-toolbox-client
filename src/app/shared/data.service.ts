@@ -35,7 +35,7 @@ export const unit_heatload_profil = 'MW';
 export const formatImage = 'image/png8';
 // layer_name
 export const geoserverGetFeatureInfoUrl = geoserverUrl + '?' +
-  'SERVICE=WMS&VERSION=1.1.1&REQUEST=GetFeatureInfo&FORMAT=image/png&TRANSPARENT=true&QUERY_LAYERS=hotmaps:';
+  'SERVICE=WMS&VERSION=1.1.1&REQUEST=GetFeatureInfo&FORMAT=image/png&TRANSPARENT=true&QUERY_LAYERS=enermaps:';
 export const nuts_level   = '3';
 export const populationLayerName = 'pop_tot_curr_density'
 export const postStatsLayersHectares = '/stats/layers/hectares';

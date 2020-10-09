@@ -19,7 +19,7 @@ export const SelectionScaleClassArray: SelectionScaleClass[] = [
 const action = 'nuts';
 const date_filter = " AND year='2013-01-01'"
 export const hectareOption = {
-  layers: 'hotmaps:' + action + 0 ,
+  layers: 'enermaps:' + action + 0 ,
   format: formatImage,
   transparent: true,
   version: '1.3.0',
@@ -28,7 +28,7 @@ export const hectareOption = {
   zIndex: scale_layer_order
 }
 export const nuts0LayerOption = {
-  layers: 'hotmaps:' + action,
+  layers: 'enermaps:' + action,
   format: formatImage,
   transparent: true,
   version: '1.3.0',
@@ -37,7 +37,7 @@ export const nuts0LayerOption = {
   zIndex: scale_layer_order
 }
 export const nuts1LayerOption = {
-  layers: 'hotmaps:' + action,
+  layers: 'enermaps:' + action,
   format: formatImage,
   transparent: true,
   version: '1.3.0',
@@ -46,7 +46,7 @@ export const nuts1LayerOption = {
   zIndex: scale_layer_order
 }
 export const nuts2LayerOption = {
-  layers: 'hotmaps:' + action,
+  layers: 'enermaps:' + action,
   format: formatImage,
   transparent: true,
   version: '1.3.0',
@@ -55,7 +55,7 @@ export const nuts2LayerOption = {
   zIndex: scale_layer_order
 }
 export const nuts3LayerOption = {
-  layers: 'hotmaps:' + action,
+  layers: 'enermaps:' + action,
   format: formatImage,
   transparent: true,
   version: '1.3.0',
@@ -64,7 +64,7 @@ export const nuts3LayerOption = {
   zIndex: scale_layer_order
 }
 export const  lau2LayerOption = {
-  layers: 'hotmaps:' + lau2name,
+  layers: 'enermaps:' + lau2name,
   format: formatImage,
   transparent: true,
   version: '1.3.0',

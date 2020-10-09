@@ -162,7 +162,7 @@ export class SnapshotService {
         let nuts_ids = `${nameId}='${snapshot.zones.join(`' OR ${nameId}='`)}'`;
 
         let url = geoserverUrl + '?service=WFS&version=2.0.0&request=GetFeature' +
-          `&typeNames=hotmaps:${layer}&outputFormat=application/json` +
+          `&typeNames=enermaps:${layer}&outputFormat=application/json` +
           `&cql_filter=${date_filter}(${nuts_ids})${stat_level_filter}`;
 
         this.http.get(url).map((res: Response) => res.json() as GeojsonClass)
